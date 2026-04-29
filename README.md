@@ -1,24 +1,24 @@
 # India Export-Import Trade Analysis for Foreign Trade Policy (FTP) Support
 
 ## Objective
-This project analyzes India’s export-import datasets to derive structured insights supporting Foreign Trade Policy (FTP) formulation and trade facilitation. It focuses on data validation, trend analysis, and policy-oriented interpretation of trade flows.
+This project presents a structured analysis of India’s export-import data to derive insights supporting Foreign Trade Policy (FTP) formulation and trade facilitation. The focus is on data validation, trend analysis, and policy-oriented interpretation of trade patterns.
 
 ## Executive Summary
-This project presents a structured analysis of India’s export trends across commodities and countries. The findings highlight concentration patterns, growth sectors, and trade dependencies that can inform Foreign Trade Policy decisions and trade facilitation strategies.
+This analysis examines India’s export trends across commodities and countries to identify growth sectors, trade concentration, and dependencies. The findings provide insights relevant to policy formulation, sectoral support, and trade facilitation strategies.
 
 ## Why This Project Matters
-International trade data plays a critical role in government decision-making. This project demonstrates how structured data analysis can support:
+Trade data analysis plays a crucial role in supporting government decision-making. This project demonstrates how structured data analysis can contribute to:
 - Policy formulation
 - Trade monitoring
 - Sector performance evaluation
 - Evidence-based decision making
 
 ## Key Policy Insights
-- Export concentration in limited commodities indicates potential need for diversification under Foreign Trade Policy (FTP)
-- High-growth sectors reflect emerging global demand trends requiring trade facilitation support
-- Country-wise dependency suggests scope for market diversification strategies
-- Declining sectors highlight areas requiring policy intervention
-- Trade patterns indicate uneven distribution across sectors
+- Export concentration in select commodities indicates the need for diversification under Foreign Trade Policy
+- High-growth sectors reflect emerging global demand and require facilitation support
+- Country-wise dependency suggests scope for market diversification
+- Declining sectors highlight areas requiring policy attention
+- Trade patterns indicate uneven distribution across commodities and regions
 
 ## Methodology
 1. **Data Orchestration:** Generating synthetic but highly realistic international trade logs.

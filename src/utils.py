@@ -102,15 +102,16 @@ def generate_validation_log(log_path, stats):
     """Generates a professional data validation report."""
     os.makedirs(os.path.dirname(log_path), exist_ok=True)
     
-    log_content = f"Records before cleaning: {stats['initial_count']}\n"
+    log_content = "Data Validation Summary\n"
+    log_content += f"Records before cleaning: {stats['initial_count']}\n"
     log_content += f"Records after cleaning: {stats['final_count']}\n\n"
     log_content += "Validation Steps:\n"
-    log_content += "- Removed duplicates\n"
-    log_content += "- Handled missing values\n"
-    log_content += "- Standardized country names\n"
-    log_content += "- Verified numeric fields (no negative values)\n\n"
-    log_content += "Result:\n"
-    log_content += "Dataset ensured for high integrity and reliability\n"
+    log_content += "- Removed duplicate records\n"
+    log_content += "- Handled missing/null values\n"
+    log_content += "- Standardized country and commodity names\n"
+    log_content += "- Verified numeric consistency\n\n"
+    log_content += "Outcome:\n"
+    log_content += "Dataset ensured for accuracy, consistency, and integrity suitable for analytical reporting\n"
     
     with open(log_path, "w") as f:
         f.write(log_content)

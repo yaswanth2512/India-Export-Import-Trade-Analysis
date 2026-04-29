@@ -1,11 +1,12 @@
+Data Validation Summary
 Records before cleaning: 1020
 Records after cleaning: 984
 
 Validation Steps:
-- Removed duplicates
-- Handled missing values
-- Standardized country names
-- Verified numeric fields (no negative values)
+- Removed duplicate records
+- Handled missing/null values
+- Standardized country and commodity names
+- Verified numeric consistency
 
-Result:
-Dataset ensured for high integrity and reliability
+Outcome:
+Dataset ensured for accuracy, consistency, and integrity suitable for analytical reporting
