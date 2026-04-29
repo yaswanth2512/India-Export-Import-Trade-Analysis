@@ -1,28 +1,11 @@
-==============================================
-      DATA VALIDATION & CLEANING LOG          
-==============================================
-Timestamp: 2026-04-29 23:13:17
+Records before cleaning: 1020
+Records after cleaning: 984
 
-1. INGESTION METRICS
-----------------------------------------------
-Total Initial Records Processed : 1020
+Validation Steps:
+- Removed duplicates
+- Handled missing values
+- Standardized country names
+- Verified numeric fields (no negative values)
 
-2. ANOMALY DETECTION
-----------------------------------------------
- - Duplicate Records Identified : 17
- - Null/Missing Metrics Found   : 15
- - Invalid Negative Values      : 4
- - Formatting Inconsistencies   : Detected and resolved (text casing).
-
-3. REMEDIATION ACTIONS
-----------------------------------------------
- - Strict deduplication executed.
- - Records lacking critical financial data dropped.
- - Sub-zero numeric anomalies purged.
- - Categorical entity standardization applied.
-
-4. FINAL DATASET METRICS
-----------------------------------------------
-Total Cleaned Records Available : 984
-Pipeline Status                 : PASSED VALIDATION
-==============================================
+Result:
+Dataset ensured for high integrity and reliability

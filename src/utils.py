@@ -101,32 +101,16 @@ def clean_data(df):
 def generate_validation_log(log_path, stats):
     """Generates a professional data validation report."""
     os.makedirs(os.path.dirname(log_path), exist_ok=True)
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
-    log_content = f"==============================================\n"
-    log_content += f"      DATA VALIDATION & CLEANING LOG          \n"
-    log_content += f"==============================================\n"
-    log_content += f"Timestamp: {timestamp}\n\n"
-    log_content += f"1. INGESTION METRICS\n"
-    log_content += f"----------------------------------------------\n"
-    log_content += f"Total Initial Records Processed : {stats['initial_count']}\n\n"
-    log_content += f"2. ANOMALY DETECTION\n"
-    log_content += f"----------------------------------------------\n"
-    log_content += f" - Duplicate Records Identified : {stats['dupe_count']}\n"
-    log_content += f" - Null/Missing Metrics Found   : {stats['missing_count']}\n"
-    log_content += f" - Invalid Negative Values      : {stats['negative_count']}\n"
-    log_content += f" - Formatting Inconsistencies   : Detected and resolved (text casing).\n\n"
-    log_content += f"3. REMEDIATION ACTIONS\n"
-    log_content += f"----------------------------------------------\n"
-    log_content += f" - Strict deduplication executed.\n"
-    log_content += f" - Records lacking critical financial data dropped.\n"
-    log_content += f" - Sub-zero numeric anomalies purged.\n"
-    log_content += f" - Categorical entity standardization applied.\n\n"
-    log_content += f"4. FINAL DATASET METRICS\n"
-    log_content += f"----------------------------------------------\n"
-    log_content += f"Total Cleaned Records Available : {stats['final_count']}\n"
-    log_content += f"Pipeline Status                 : PASSED VALIDATION\n"
-    log_content += f"==============================================\n"
+    log_content = f"Records before cleaning: {stats['initial_count']}\n"
+    log_content += f"Records after cleaning: {stats['final_count']}\n\n"
+    log_content += "Validation Steps:\n"
+    log_content += "- Removed duplicates\n"
+    log_content += "- Handled missing values\n"
+    log_content += "- Standardized country names\n"
+    log_content += "- Verified numeric fields (no negative values)\n\n"
+    log_content += "Result:\n"
+    log_content += "Dataset ensured for high integrity and reliability\n"
     
     with open(log_path, "w") as f:
         f.write(log_content)
